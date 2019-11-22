@@ -1,3 +1,56 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.container img, .container p {
+  width: 500px;
+  height: 300px;
+}
+
+
+@media (min-width: 478px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+}
+
+.container .main-info {
+  max-width: 1400px;
+}
+
 .esports-info {
-  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+  /* flex: 1; */
+}
+
+.container p {
+  overflow: scroll;
+  height: 200px;
+}
+
+@media (min-width: 478px) {
+  .main-info {
+    display: flex;
+    justify-content: left;
+    box-sizing: border-box;
+}
+
+.esports-tournaments img{
+  flex: 2;
+}
+.esports-tournaments p {
+  flex: 1;
+}
+
+.esports-tournaments img {
+  width: 600px;
+  height: 400px;
+  flex-wrap: wrap;
+  float: left;
 }
